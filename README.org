@@ -3,7 +3,7 @@
 - Библиотека: gtk-rs
 - Вариант 1: аппроксимация окружности
 
-Как собрать:
+Как скомпилировать:
 #+begin_src shell
 cargo build
 #+end_src
@@ -12,3 +12,6 @@ cargo build
 #+begin_src shell
 cargo run
 #+end_src
+
+#+CAPTION: Как это выглядит сейчас (в i3wm).
+[[./img/a.jpg]]
