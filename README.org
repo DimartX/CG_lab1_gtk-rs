@@ -1,0 +1,14 @@
+* Лабораторная N 1 по компьютерной графике
+- Язык: Rust
+- Библиотека: gtk-rs
+- Вариант 1: аппроксимация окружности
+
+Как собрать:
+#+begin_src shell
+cargo build
+#+end_src
+
+Запуск:
+#+begin_src shell
+cargo run
+#+end_src
