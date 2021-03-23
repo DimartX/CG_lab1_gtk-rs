@@ -13,5 +13,6 @@ cargo build
 cargo run
 #+end_src
 
-#+CAPTION: Как это выглядит сейчас (в i3wm).
+Как это выглядит сейчас (в i3wm):
+
 [[./resources/photo_2021-03-23_20-28-56.jpg]]
