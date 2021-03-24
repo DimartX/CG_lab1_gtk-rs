@@ -22,6 +22,7 @@ impl<'a> CairoCanvas<'a> {
     pub fn new(cr: &'a cairo::Context, size: (i32, i32)) -> Self {
         cr.scale(size.0 as f64, size.1 as f64);
         cr.set_source_rgb(1.0, 1.0, 1.0);
+        cr.set_font_size(0.012);
         cr.paint();
         Self { cr, size }
     }
@@ -58,6 +59,12 @@ impl<'a> Canvas for CairoCanvas<'a> {
         self.cr.move_to(p.x() as f64 / self.size.0 as f64,
                         p.y() as f64 / self.size.1 as f64);
         self.cr.show_text(text);
+
+        //self.cr.select_font_face("Sans", FontSlant::Normal, FontWeight::Normal);
+        //self.cr.set_font_size(0.35);
+
+        //self.cr.move_to(0.04, 0.53);
+        //self.cr.show_text("Hello");
     }
 
     fn draw_line(&mut self, points: &[Point]) {

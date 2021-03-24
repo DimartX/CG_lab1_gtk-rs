@@ -15,6 +15,7 @@ pub struct State {
     pub moveAxisOy: i32,
     pub rotateAxes: i32,
 }
+// And i really sorry about camel case
 
 impl State {
     pub fn new(buttons: &HashMap<String, gtk::SpinButton>) -> Self {
@@ -31,5 +32,19 @@ impl State {
             moveAxisOy:   buttons.get("moveAxisOy").unwrap().get_value_as_int(),
             rotateAxes:   buttons.get("rotateAxes").unwrap().get_value_as_int(),
         }
+    }
+
+    pub fn default(&mut self) {
+        self.cntPoints    = 5;
+        self.moveFigureOx = 0;
+        self.moveFigureOy = 0;
+        self.rotateFigure = 0;
+        self.scale        = 100;
+        self.scaleOx      = 100;
+        self.scaleOy      = 100;
+        self.zoom         = 100;
+        self.moveAxisOx   = 0;
+        self.moveAxisOy   = 0;
+        self.rotateAxes   = 0;
     }
 }

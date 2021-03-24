@@ -24,14 +24,14 @@
   <object class="GtkAdjustment" id="adjustment2">
     <property name="lower">-999</property>
     <property name="upper">999</property>
-    <property name="step-increment">1</property>
-    <property name="page-increment">10</property>
+    <property name="step-increment">10</property>
+    <property name="page-increment">50</property>
   </object>
   <object class="GtkAdjustment" id="adjustment3">
     <property name="lower">-999</property>
     <property name="upper">999</property>
-    <property name="step-increment">1</property>
-    <property name="page-increment">10</property>
+    <property name="step-increment">10</property>
+    <property name="page-increment">50</property>
   </object>
   <object class="GtkAdjustment" id="adjustment4">
     <property name="upper">360</property>
@@ -39,6 +39,7 @@
     <property name="page-increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adjustment5">
+    <property name="lower">1</property>
     <property name="upper">999</property>
     <property name="value">100</property>
     <property name="step-increment">1</property>
@@ -47,14 +48,14 @@
   <object class="GtkAdjustment" id="adjustment6">
     <property name="lower">-999</property>
     <property name="upper">999</property>
-    <property name="step-increment">1</property>
-    <property name="page-increment">10</property>
+    <property name="step-increment">10</property>
+    <property name="page-increment">50</property>
   </object>
   <object class="GtkAdjustment" id="adjustment7">
     <property name="lower">-999</property>
     <property name="upper">999</property>
-    <property name="step-increment">1</property>
-    <property name="page-increment">10</property>
+    <property name="step-increment">10</property>
+    <property name="page-increment">50</property>
   </object>
   <object class="GtkAdjustment" id="adjustment8">
     <property name="upper">360</property>
@@ -248,6 +249,9 @@
                     <property name="position">10</property>
                   </packing>
                 </child>
+                <child>
+                  <placeholder/>
+                </child>
               </object>
               <packing>
                 <property name="resize">False</property>
@@ -433,6 +437,19 @@
                     <property name="expand">True</property>
                     <property name="fill">True</property>
                     <property name="position">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="default">
+                    <property name="label" translatable="yes">Default</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">11</property>
                   </packing>
                 </child>
               </object>

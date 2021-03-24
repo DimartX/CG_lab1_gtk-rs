@@ -62,7 +62,7 @@ fn setup_canvas_area(
     drawing_area.borrow().connect_draw(move |_, cr| {
         let size: (i32, i32) = (draw_box.get_allocated_width(), draw_box.get_allocated_height());
         let mut canvas = CairoCanvas::new(&cr, size);
-        canvas.set_line_width(0.001);
+        canvas.set_line_width(0.002);
 
         let cur_draw_state = draw_state.borrow();
 
